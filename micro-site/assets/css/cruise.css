@@ -1,0 +1,95 @@
+html {
+  box-sizing: border-box;
+  background-color:#776968; /*murky brown-- 2nd Background Color*/
+  color: #000099; /* dk blue--font color*/
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  
+}
+
+body {
+    width: 960px;
+    background-color:#e6faff; /*pale blue-- Main Background Color*/
+    text-align:center;
+    font-family: "Raleway", Arial, Helvetica, sans-serif; /*font stack- main font*/
+    margin: 0 auto;
+  }
+#header h1 a {
+    display:block;
+	background-image: url("../img/galaxy-cruise.jpeg");/*banner image*/
+	background-repeat:no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 140px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+#nav ul {
+   box-sizing: border-box;  
+   height: 25px;
+   background-color:#E8C195;/*creamy sunset -- Navigation*/
+   list-style-type: none; /*takes away bullet point*/
+   margin-left: 0px;
+   display: flex;
+   flex-direction:row;
+   justify-content:space-evenly;
+   padding:4px;
+ }
+ 
+ #nav li {
+    font-family:'Quintessential',cursive,sans-serif;/*font stack for nav bar----*/
+    font-size: 15px;
+}
+ 
+#nav, #third a:hover,a:active {/*hover color 4 nav and Sign up*/
+	background-color: rgba(0,0,0,0.2);
+	text-decoration:none;
+}
+ 
+ h1 {
+     font-family:'Qwigley',sans-serif;/*font stack for page titles--------------*/
+     font-size: 48px;
+     text-align: center;
+ }
+ 
+ #content, #secondary{
+     padding:40px;
+     text-align:left;
+     line-height:1.8;
+ }
+  
+#secondary img { /*2nd ship image on home page*/
+    border: double;
+	margin: 20px 20px 20px 0;
+	float: left;
+  }
+  
+#third h3 a { /*Sign Up Today!*/
+   background-color:#fff;
+   color: red;
+   text-align: 30%;
+   width:175px;
+   height:50px;
+
+  }
+  
+  details{
+     padding:40px;
+     line-height:10%;
+  }
+  
+ details p{/*----------------------------------------------------------------FAQ*/
+     color:red;
+ }
+ 
+
+  
+#footer {
+	background-color: #E8C195;/* creamy sunset*/
+	height: 25px;
+	text-align: center;
+}

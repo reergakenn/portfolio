@@ -1,0 +1,190 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+   box-sizing: border-box;
+   margin: auto 20% auto 30%;  /*top right bottom left*/
+   width: auto;
+}
+
+body {
+   margin: auto;
+   font-family: 'Righteous',Raleway,sans-serif;
+}
+
+#cover {
+  width: 460px;
+  height: 1002px;
+  background: linear-gradient(180deg, #D12F2F 0%,
+                        rgba(255, 255, 255, 0) 100%),
+                        #5F2C2C; /* blurred red*/
+}
+
+header {
+  text-align: center;
+  padding: 2%;
+  font-size: 150%;
+  opacity: 0.3;
+}
+
+header h1 {
+   text-shadow: 0.2px 1px #000; 
+}
+
+nav {
+  margin-right: 10%; /* centers NAV*/
+}
+
+nav ul li a {
+  display: flex;
+  flex-direction:row;
+  justify-content:space-evenly;
+ 
+  padding: 3%;
+  text-align: center;
+  font-size: 150%;
+  text-decoration: none;/* no underline*/
+  border:5px solid;
+  
+  color: #000; /* changes link color*/
+  opacity: 0.3;
+  transition: 0.3s;
+}
+
+nav ul li a:hover, a:active {opacity: 3}
+
+nav ul li {
+    list-style-type: none; /* no bullet points*/
+    padding:1%;
+}
+/*
+*darkwoods image
+*/
+.darkwoods {
+  position: absolute;
+    left: 30%;
+    bottom:0;
+    top: 740px;
+
+  background: url(darkwoods.jpeg);
+  opacity: 0.25;
+  filter: blur(4px);
+}
+
+footer {
+  padding-top: 4%;
+
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+}
+
+footer a { /* back to top*/
+  color:#000;
+  text-decoration: none;/* no underline*/
+}
+
+
+/*
+* Home Page
+*/
+main {
+  padding: 10% 0 5% 0;
+  font-size: 150%;
+  line-height: 25px;
+  text-align: center;
+}
+
+main p{
+  padding: 1% 0 1% 0;;
+}
+
+main ul  {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+    
+  padding:5%;
+  list-style-type: none; /* no bullet points*/
+}
+
+main a { 
+  color:#000; /* changes link color*/
+  text-decoration: none;/* no underline*/
+  
+  border:5px solid;
+  opacity: 0.3;
+  transition: 0.3s;
+}
+
+main a:hover, a:active {opacity: 3}
+  
+/*
+* Story Page
+*/
+main section {
+   padding: 5% 3% 0 3%;
+   font-size: 75%;
+   text-align: center;
+} 
+
+/*
+* About Page
+*/
+#history, #sources {
+  padding: 0 3% 0 3%;
+  font-size: 75%;
+  text-align: center;
+}
+
+/*
+* Media Queries Page
+*/
+/* Portrait and Landscape for mobile devices*/
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) {
+    
+ #cover {
+  width: 640px;
+  height: 1002px;
+  background: linear-gradient(180deg, #D12F2F 0%,
+                        rgba(255, 255, 255, 0) 100%),
+                        #5F2C2C; /* blurred red*/
+}
+  }
+  
+/* Portrait and Landscape  for tablets*/
+@media 
+  (min-device-width: 800px) 
+  and (max-device-width: 1280px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+   
+#cover {
+  width: 800px;
+  height: 1002px;
+  background: linear-gradient(180deg, #D12F2F 0%,
+                        rgba(255, 255, 255, 0) 100%),
+                        #5F2C2C; /* blurred red*/
+} 
+  }
+  
+/* ----------- Retina Screens for laptops----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) { 
+    
+#cover {
+  width: 1200px;
+  height: 1002px;
+  background: linear-gradient(180deg, #D12F2F 0%,
+                        rgba(255, 255, 255, 0) 100%),
+                        #5F2C2C; /* blurred red*/
+}
+  }
