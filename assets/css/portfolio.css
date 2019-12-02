@@ -1,0 +1,392 @@
+/*Nneka L. Greer-MCOM 3310 Web Principle and Design 10-14-19*/
+/*also for ITEC 4610 Project and Portfolio 11-21-19*/
+
+
+/* ALL pages*/
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; 
+}
+html {
+   box-sizing: border-box;
+   margin: auto;
+}
+
+body {
+  font-family:'Raleway',cursive,sans-serif;
+  font-size: 18px;
+  letter-spacing: .5px;  
+}
+.home-main{
+  background:  linear-gradient(180deg, #5f126d 0%, /* dk. purple*/
+                       rgba(255, 255, 255, 0) 100%),
+                        #e6b3ff;
+}
+.about-main{
+  background: linear-gradient(rgb(95, 18, 109), rgba(248, 40, 40, 0.712), rgb(248, 40, 40));
+}
+.projects-main{
+  background: linear-gradient(rgb(95, 18, 109), rgba(40, 248, 231, 0.712), rgb(57, 187, 24));
+}
+.resume-main{
+  background: linear-gradient(rgb(95, 18, 109), rgba(255, 145, 0, 0.678), rgb(255, 217, 102));
+}
+main{
+  width: 80vw;
+  margin: auto;
+  padding: 20px;
+}
+a{
+  text-decoration: none;
+  padding: 12px 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+h1 { /* my name*/
+    text-align: center;
+    font-family:'Quintessential',cursive,sans-serif;   
+        padding:50px 0 30px 0;
+}
+
+h1 a { /* my name*/
+  color: #fff; /* shortcut for white*/
+  font-size: 250%;
+  text-decoration: none;/* no underline*/   
+}
+h1 a:hover,a:active {/*link hover color*/
+	background-color: rgba(0,0,0,0.2);
+  padding:0 15px 0 10px;
+  border-radius: 10px;
+     border:5px solid;
+     opacity: 0.3;
+     transition: 0.3s;
+}
+p{
+  font-family: 'Ibarra Real Nova', serif;
+}
+
+#nav ul  { /* nav bar*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style-type: none; /* no bullet points*/
+  font-size: 150%;
+  padding:10px 0 10px 0;
+}
+
+#nav li a { /*link color*/
+   color: #fff;
+   text-decoration: none;/* no underline*/ 
+}
+
+#nav a:hover,a:active {/*link hover color*/
+	background-color: rgba(0,0,0,0.2);
+  padding:15px 10px 15px 10px;
+    border:3px solid;
+    border-radius: 10px;
+    opacity: 0.3;
+    transition: 0.3s;
+}
+
+/* INDEX page*/
+#myself {
+   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding:15px; 
+}
+
+#myself img, #brief {
+  border-top:5px solid #5F126D;
+  border-bottom: 5px solid #5F126D;
+  border-radius: 10px;
+  
+}
+
+#brief {
+  text-align: center;
+  color: #f1f1f1;
+    font-family:'Quintessential',cursive,sans-serif; 
+    font-size: 150%; 
+    margin: 10px 30px 10px 70px;
+}
+
+#reflect {
+  color: #000000;;
+    font-family: 'Raleway', sans-serif;
+    font-size: 110%; 
+    padding:15px
+}
+
+#reflect h2 {
+  text-align: center;
+}
+
+/* ABOUT page*/
+.about p, li, h2, h4, a{
+  color: #f1f1f1;
+}
+.about h4{
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight:600;
+  text-transform: uppercase;
+}
+.about a:hover{
+  color: #e6b3ff;
+  background: #f82828;
+  border-radius: 10px;
+  border: 1px solid rgba(241, 241, 241, 0.486);
+  transition: .2s
+}
+#info {
+  padding:15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; 
+}   
+#info article{
+  width: 24%;
+  height: auto;
+  text-align: center;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.295);
+  margin: 20px;
+  border-radius: 10px;
+}
+#info p{
+  letter-spacing: 1px;
+}
+#bio, #hobbies, #gallery {
+  padding:15px;
+  margin:auto;
+  line-height: 25px;
+}
+#bio{
+  background: rgba(95, 18, 109, 0.733);
+  width: 75%;
+  padding: 20px 40px;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+#bio h2 {
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+/*Hobbies area*/
+
+.hobbies{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.hob{
+  width: 100%;
+  height: auto;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+  background: rgba(95, 18, 109, 0.534);
+}
+.hob h4{
+  font-size: 40px;
+  line-height: 0px;
+  width: 100%;
+  text-align: center;
+}
+.hob-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  z-index: 11;
+}
+.hob-content p{
+  width: 47%;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.295);
+  border-radius: 10px;
+}
+.hob-content ul{
+  width: 47%;
+  padding: 20px;
+  border-radius: 10px;
+}
+.hob-content li{
+  padding: 5px;
+}
+.hob li{
+  line-height: 30px;
+  list-style-type: square;
+}
+ /*RESUME page*/
+.sub_nav {
+  padding:15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; 
+}
+.sub_nav a{ /*resume sections*/
+  width: 24%;
+  height: auto;
+  text-align: center;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.295);
+  margin: 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight:600;
+  text-transform: uppercase;
+}
+.sub_nav a:hover{ /*resume sections*/
+  color: #000000;
+  background: #ffd966;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.294);
+  transition: .2s
+ }
+ #letter{
+  color:#f1f1f1; 
+  width: 75%;
+  padding: 20px 40px;
+  margin: 20px auto;
+  border-top:5px solid #5F126D;
+  border-bottom: 5px solid #5F126D;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 150%; 
+}
+
+.resume .skill-list{ /*resume skills*/
+  padding:15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; 
+}   
+#skills h4 {
+  text-align: center;
+}
+#skills article{
+  width: 24%;
+  height: auto;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.295);
+  margin: 20px;
+  border-radius: 10px;
+}
+.skill-list li{
+  line-height: 30px;
+  list-style-type: square;
+}
+.edu-content, .emp-content, .int-content{ /*Education*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  z-index: 11;
+}
+.edu-content h4 { /* dark bkgd*/
+  width: 47%;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.295);
+  border-radius: 10px;
+}
+.edu-content article, .emp-content article, .int-content article {
+  width: 47%;
+  padding: 20px;
+  border-radius: 10px;
+}
+.int-content .pix { /* dark bkgd on title picture*/
+  width: 40%;
+  padding: 20px;
+  border-radius: 10px;
+}
+#letter a:hover, .edu-content a:hover, .emp-content a:hover, .int-content a:hover{
+  color: #000000;
+  background: #ffd966;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.294);
+  transition: .2s
+}
+
+#letter h2, #skills h2, #education h2, #employment h2, #internships h2 { /* subheadings on Resume page*/
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.resume #employment ul li, .resume #internships ul li {
+ list-style-type: square; /* square bullet points*/
+}
+#skills, #education, #employment, #internships{ /* purple bkgd on Resume page*/
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    background: rgba(95, 18, 109, 0.534);
+}
+
+/* PROJECT page*/
+.project h2 { /* subheadings on Resume page*/
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.proj-content a:hover{ /*project section links*/
+  background: #39bb18;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.294);
+  transition: .2s
+ }
+.project .writing,.project .web, .project .softskills, .project .programming,
+.project .database, .project .illustration, .project .media { /* purple bkgd on Resume page*/
+  width: 100%;
+  height: auto;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+  background: rgba(95, 18, 109, 0.534);
+}
+.proj-content p{
+  width: 47%;
+  margin: 20px auto;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.295);
+  border-radius: 10px;
+}
+
+.project {
+    margin:100px;
+    padding:15px;
+    text-align: center;
+}
+
+
+
+/* FOOTER*/
+
+footer {
+  text-align:center;
+  font-size:larger;
+}
