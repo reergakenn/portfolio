@@ -114,14 +114,14 @@ p{
     margin: 10px 30px 10px 70px;
 }
 
-#reflect {
+#reflect, #pd-final {
   color: #000000;;
     font-family: 'Raleway', sans-serif;
     font-size: 110%; 
     padding:15px
 }
 
-#reflect h2 {
+#reflect h2, #pd-final h2 {
   text-align: center;
 }
 
