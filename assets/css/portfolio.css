@@ -355,7 +355,7 @@ p{
   border: 1px solid rgba(0, 0, 0, 0.294);
   transition: .2s
  }
-.project .writing,.project .web, .project .softskills, .project .programming,
+.project .printdesign,.project .writing,.project .web, .project .softskills, .project .programming,
 .project .database, .project .illustration, .project .media { /* purple bkgd on Resume page*/
   width: 100%;
   height: auto;
