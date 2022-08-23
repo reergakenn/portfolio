@@ -376,6 +376,9 @@ p{
   border-radius: 10px;
 }
 
+.proj-cont ul {
+    list-style-type: none; /* no bullet points*/}
+
 .project {
     margin:100px;
     padding:15px;
