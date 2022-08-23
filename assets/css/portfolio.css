@@ -349,8 +349,16 @@ p{
   font-size: 30px;
   text-transform: uppercase;
 }
+
+.proj_sub_nav a:hover{ /* project id links*/
+  background: #39bb18; /* green*/
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.294);
+  transition: .2s
+}
+
 .proj-content a:hover{ /*project section links*/
-  background: #39bb18;
+  background: #39bb18; /* green*/
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.294);
   transition: .2s
@@ -376,8 +384,9 @@ p{
   border-radius: 10px;
 }
 
-.proj-cont ul {
-    list-style-type: none; /* no bullet points*/}
+.proj-cont p ul {
+    list-style-type: none; /* no bullet points*/
+}
 
 .project {
     margin:100px;
