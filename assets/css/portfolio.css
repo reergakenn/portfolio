@@ -102,8 +102,7 @@ p{
 #myself img, #brief {
   border-top:5px solid #5F126D;
   border-bottom: 5px solid #5F126D;
-  border-radius: 10px;
-  
+  border-radius: 10px;  
 }
 
 #brief {
@@ -119,6 +118,15 @@ p{
     font-family: 'Raleway', sans-serif;
     font-size: 110%; 
     padding:15px
+}
+
+#pd-final h2 a:hover,a:active{/*link hover color*/
+   background-color: rgba(0,0,0,0.2);
+  padding:15px 10px 15px 10px;
+    border:3px solid;
+    border-radius: 10px;
+    opacity: 0.3;
+    transition: 0.3s;
 }
 
 #reflect h2, #pd-final h2 {
