@@ -352,6 +352,10 @@ p{
 }
 
 /* PROJECT page*/
+.proj_sub_nav {
+  text-align: center;
+}
+
 .project h2 { /* subheadings on Resume page*/
   text-align: center;
   font-size: 30px;
