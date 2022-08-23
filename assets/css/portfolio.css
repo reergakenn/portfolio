@@ -402,7 +402,7 @@ p{
     text-align: center;
 }
 /* Media Area*/
-iframe { 
+iframe { /* centers the videos*/
  display: block;
  margin: 0 auto;
 }
