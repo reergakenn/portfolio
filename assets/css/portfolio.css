@@ -364,7 +364,7 @@ p{
   transition: .2s
  }
 .project .printdesign,.project .writing,.project .web, .project .softskills, .project .programming,
-.project .database, .project .illustration, .project .media { /* purple bkgd on Resume page*/
+.project .database, .project .illustration, .project .media { /* purple bkgd on Resume page - softskills and illustration were deleted in html*/
   width: 100%;
   height: auto;
   margin: 20px auto;
@@ -393,7 +393,11 @@ p{
     padding:15px;
     text-align: center;
 }
-
+/* Media Area*/
+iframe { 
+ display: block;
+ margin: 0 auto;
+}
 
 
 /* FOOTER*/
